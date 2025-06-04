@@ -387,10 +387,10 @@ function loaderPageFingerprintToDetailTarget(
     maxWidth?: number
     minWidth?: number
     maxHeight?: number
-    minHidth?: number
+    minHeight?: number
   }
 ) {
-  const { maxWidth, minWidth, maxHeight, minHidth } = fingerprint
+  const { maxWidth, minWidth, maxHeight, minHeight } = fingerprint
 
   const viewport: any = detail.viewport ?? {}
   // 1.width / height
@@ -401,7 +401,7 @@ function loaderPageFingerprintToDetailTarget(
 
   if (maxHeight) {
     viewport.height =
-      maxHeight === minHidth ? maxHeight : random(maxHeight, minHidth)
+      maxHeight === minHeight ? maxHeight : random(maxHeight, minHeight)
   }
 
   if (Object.hasOwn(viewport, 'width') && Object.hasOwn(viewport, 'height')) {

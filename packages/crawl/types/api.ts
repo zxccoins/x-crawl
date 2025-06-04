@@ -90,7 +90,7 @@ export interface CrawlPageDetailTargetConfig extends CrawlCommonConfig {
         maxWidth?: number
         minWidth?: number
         maxHeight?: number
-        minHidth?: number
+        minHeight?: number
       })
     | null
 }
@@ -130,7 +130,7 @@ export interface CrawlPageAdvancedConfig extends CrawlCommonConfig {
     maxWidth?: number
     minWidth?: number
     maxHeight?: number
-    minHidth?: number
+    minHeight?: number
   })[]
 
   headers?: AnyObject
